@@ -141,7 +141,7 @@ gantt
 
 ### 2.2 배포 URL
 
-- [배포링크](https://polao63.github.io/est_fe_13_1st_project/)
+- [배포링크](https://soho1109.github.io/EST_1st_project/)
 
 ### 2.3 📚 개발 컨벤션 가이드
 
