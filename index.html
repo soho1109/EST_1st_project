@@ -610,21 +610,21 @@
 
       popup.style.display = document.cookie.includes("popup = 안볼래") ? "none" : "block";
 
-      //닫기 버튼을 클릭하면 popup이 안보인다
       popupCloseBtn.addEventListener("click", () => {
         popup.style.display = "none";
-        if(agree.checked){ //체크 여부 확인
+        if(agree.checked){
           createCookie('popup','안볼래', 1);
         }else{
           createCookie('popup','안볼래', -1);
         }
       });
 
-      //쿠키 생성 함수
-      function createCookie(nane, value, expire){
+      function createCookie(name, value, days){
         let today = new Date();
-        today.setDate(today.getDate() + expire);
-        document.cookie = `${name}=${value}; Expires=${today.toString()}`;
+
+        today.setDate(today.getDate() + days);
+
+        document.cookie = `${name}=${value}; expires=${today.toUTCString()}`;
       }
     </script>
   </body>
