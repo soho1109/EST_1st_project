@@ -1,28 +1,33 @@
 // popup
-const popup = document.querySelector("#popup");
-      const popupCloseBtn = popup.querySelector("#popup-Btn");
-      const agree = document.querySelector("#agree");
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.querySelector("#popup");
 
-      popup.style.display = document.cookie.includes("popup = 안볼래")
-        ? "none"
-        : "block";
+  if (popup) {
+    const popupCloseBtn = popup.querySelector("#popup-Btn");
+    const agree = document.querySelector("#agree");
 
-      popupCloseBtn.addEventListener("click", () => {
-        popup.style.display = "none";
-        if (agree.checked) {
-          createCookie("popup", "안볼래", 1);
-        } else {
-          createCookie("popup", "안볼래", -1);
-        }
-      });
+    popup.style.display = document.cookie.includes("popup=안볼래")
+      ? "none"
+      : "block";
 
-      function createCookie(name, value, days) {
-        let today = new Date();
+    popupCloseBtn.addEventListener("click", () => {
+      popup.style.display = "none";
 
-        today.setDate(today.getDate() + days);
-
-        document.cookie = `${name}=${value}; Expires=${today.toUTCString()}`;
+      if (agree.checked) {
+        createCookie("popup", "안볼래", 1);
+      } else {
+        createCookie("popup", "안볼래", -1);
       }
+    });
+  }
+
+  function createCookie(name, value, days) {
+    let today = new Date();
+    today.setDate(today.getDate() + days);
+
+    document.cookie = `${name}=${value}; expires=${today.toUTCString()}`;
+  }
+});
 // Slide     
 const controlSlide = new Swiper(".online-content", {
   loop: true,
@@ -40,3 +45,4 @@ const controlSlide = new Swiper(".online-content", {
   slidesPerView: 1,
   spaceBetween: 20,
 });
+
