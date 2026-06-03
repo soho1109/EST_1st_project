@@ -771,18 +771,27 @@ p{
   background: var(--medium--blue-muted);
   color: var(--icon-accent);
 }
-.slide-btn.next {
-  background-color:var(--medium--blue-muted);
-  color: var(--icon-accent);
+/* pagination */
+.swiper-pagination {
+  margin-top: 20px;
+  position: static;
 }
 
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2563eb;
+}
+/* pagination */
 .review-text {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   padding-left: 10px;
   padding-bottom: 20px;
-  background-color:var(--card-bg2);
 }
 .review-text h3 {
   word-break: keep-all;
@@ -790,6 +799,10 @@ p{
 }
 .review-text p{
   padding-top: 20px;
+}
+.review-item {
+  background-color:var(--card-bg2);
+  border-radius: 5px;
 }
 /* 헤더 -  */
 .intro-header {

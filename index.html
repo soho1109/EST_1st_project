@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -27,11 +32,20 @@
         <p>- 과정명: 오르미 프론트엔드 13기</p>
         <p>- 제작기간: 2026.04.27 ~ 2026.05.12</p>
         <p>- 개발환경: HTML,CSS</p>
-        <p>- 소스관리: <a href="https://github.com/soho1109/EST_1st_project.git" class="git-link">Github</a></p>
+        <p>
+          - 소스관리:
+          <a
+            href="https://github.com/soho1109/EST_1st_project.git"
+            class="git-link"
+            >Github</a
+          >
+        </p>
       </div>
-      <input type="checkbox" id="agree" />
-      <label for="agree" class="today">하루 안보기</label>
-      <button id="popup-Btn">닫기</button>
+      <div class="popup-Btn_box">
+        <input type="checkbox" id="agree" />
+        <label for="agree" class="today">하루 안보기</label>
+        <button id="popup-Btn">닫기</button>
+      </div>
     </div>
     <!-- <body> -->
     <!-- 헤더 -->
@@ -73,7 +87,8 @@
         </button>
       </div>
     </header>
-    <!-- //강채희 -->
+    <!-- 강채희 -->
+
     <main>
       <!-- 박소호 -->
       <!-- hero 섹션 -->
@@ -116,7 +131,7 @@
               </li>
             </ul>
           </header>
-          <!-- 슬라이드네비 -->
+          <!-- 슬라이드 버튼 네비 -->
           <div class="slides_nav">
             <button class="slide-btn prev">
               <span class="material-icons">keyboard_arrow_left</span>
@@ -126,46 +141,134 @@
             </button>
           </div>
           <!-- 온라인 컨텐츠 -->
-          <section class="online-content">
-            <ul class="list">
-              <!-- item -->
-              <li class="item1">
-                <a href="#">
-                  <!-- 이미지 -->
-                  <img src="./images/front-img.jpg" alt="온라인과정 이미지" />
-                  <!-- 텍스트 박스 -->
-                  <div class="text-box">
-                    <h3 class="text-h3-md">프론트엔드 개발 14기</h3>
-                    <p class="text-p">모집기간. 0000.00.00~00.00</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="item2">
-                <a href="">
-                  <!-- 이미지 -->
-                  <img src="./images/AI-img.jpg" alt="온라인과정 이미지" />
-                  <!-- 텍스트 박스 -->
-                  <div class="text-box">
-                    <h3 class="text-h3-md">AI 퀀트 4기</h3>
-                    <p class="text-p">모집기간. 2026.05.27~10.23</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="item3">
-                <a href="">
-                  <!-- 이미지 -->
-                  <img src="./images/IOS-img.jpg" alt="온라인과정 이미지" />
-                  <!-- 텍스트 박스 -->
-                  <div class="text-box">
-                    <h3 class="text-h3-md">IOS앱 개발 7기</h3>
-                    <p class="text-p">모집기간. 2026.03.25~05.18</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
+          <div class="swiper online-content">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="list">
+                  <!-- item -->
+                  <li class="item1">
+                    <a href="#">
+                      <!-- 이미지 -->
+                      <img
+                        src="./images/front-img.jpg"
+                        alt="온라인과정 이미지"
+                      />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">프론트엔드 개발 14기</h3>
+                        <p class="text-p">모집기간. 0000.00.00~00.00</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item2">
+                    <a href="">
+                      <!-- 이미지 -->
+                      <img src="./images/AI-img.jpg" alt="온라인과정 이미지" />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">AI 퀀트 4기</h3>
+                        <p class="text-p">모집기간. 2026.05.27~10.23</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item3">
+                    <a href="">
+                      <!-- 이미지 -->
+                      <img src="./images/IOS-img.jpg" alt="온라인과정 이미지" />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">IOS앱 개발 7기</h3>
+                        <p class="text-p">모집기간. 2026.03.25~05.18</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="list">
+                  <!-- item -->
+                  <li class="item1">
+                    <a href="#">
+                      <!-- 이미지 -->
+                      <img
+                        src="./images/front-img.jpg"
+                        alt="온라인과정 이미지"
+                      />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">프론트엔드 개발 14기</h3>
+                        <p class="text-p">모집기간. 0000.00.00~00.00</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item2">
+                    <a href="">
+                      <!-- 이미지 -->
+                      <img src="./images/AI-img.jpg" alt="온라인과정 이미지" />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">AI 퀀트 4기</h3>
+                        <p class="text-p">모집기간. 2026.05.27~10.23</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item3">
+                    <a href="">
+                      <!-- 이미지 -->
+                      <img src="./images/IOS-img.jpg" alt="온라인과정 이미지" />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">IOS앱 개발 7기</h3>
+                        <p class="text-p">모집기간. 2026.03.25~05.18</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="list">
+                  <!-- item -->
+                  <li class="item1">
+                    <a href="#">
+                      <!-- 이미지 -->
+                      <img
+                        src="./images/front-img.jpg"
+                        alt="온라인과정 이미지"
+                      />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">프론트엔드 개발 14기</h3>
+                        <p class="text-p">모집기간. 0000.00.00~00.00</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item2">
+                    <a href="">
+                      <!-- 이미지 -->
+                      <img src="./images/AI-img.jpg" alt="온라인과정 이미지" />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">AI 퀀트 4기</h3>
+                        <p class="text-p">모집기간. 2026.05.27~10.23</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item3">
+                    <a href="">
+                      <!-- 이미지 -->
+                      <img src="./images/IOS-img.jpg" alt="온라인과정 이미지" />
+                      <!-- 텍스트 박스 -->
+                      <div class="text-box">
+                        <h3 class="text-h3-md">IOS앱 개발 7기</h3>
+                        <p class="text-p">모집기간. 2026.03.25~05.18</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -412,69 +515,205 @@
               <span class="material-icons">keyboard_arrow_right</span>
             </button>
           </div>
-          <section class="online-content">
-            <ul class="review-list">
-              <li class="review-item">
-                <a href="#">
-                  <figure>
-                    <img
-                      src="./images/student1.png"
-                      alt="취업 성공한 인물 사진"
-                    />
-                  </figure>
-                  <div class="review-text">
-                    <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
-                    <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
-                    <p>O**-수강생-백엔드</p>
-                  </div>
-                </a>
-              </li>
-              <li class="review-item">
-                <a href="#">
-                  <figure>
-                    <img
-                      src="./images/student2.png"
-                      alt="취업 성공한 인물 사진"
-                    />
-                  </figure>
-                  <div class="review-text">
-                    <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
-                    <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
-                    <p>O**-수강생-백엔드</p>
-                  </div>
-                </a>
-              </li>
-              <li class="review-item">
-                <a href="#">
-                  <figure>
-                    <img
-                      src="./images/student3.png"
-                      alt="취업 성공한 인물 사진"
-                    />
-                  </figure>
-                  <div class="review-text">
-                    <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
-                    <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
-                    <p>O**-수강생-백엔드</p>
-                  </div>
-                </a>
-              </li>
-              <li class="review-item">
-                <a href="#">
-                  <figure>
-                    <img
-                      src="./images/student4.png"
-                      alt="취업 성공한 인물 사진"
-                    />
-                  </figure>
-                  <div class="review-text">
-                    <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
-                    <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
-                    <p>O**-수강생-백엔드</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <section class="swiper online-content review-slider">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 1 -->
+              <div class="swiper-slide">
+                <ul class="review-list">
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student1.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student2.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student3.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student4.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 슬라이드 2 -->
+              <div class="swiper-slide">
+                <ul class="review-list">
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student1.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student2.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student3.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student4.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 슬라이드 3 -->
+              <div class="swiper-slide">
+                <ul class="review-list">
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student1.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student2.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student3.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="review-item">
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./images/student4.png"
+                          alt="취업 성공한 인물 사진"
+                        />
+                      </figure>
+                      <div class="review-text">
+                        <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                        <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
+                        <p>O**-수강생-백엔드</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </section>
         </div>
       </section>
@@ -530,7 +769,6 @@
           </div>
         </div>
       </section>
-
       <!-- //조영빈 -->
       <!-- 강채희 -->
       <section class="banner section-header" aria-labelledby="banner title">
@@ -603,29 +841,6 @@
       </div>
     </footer>
     <!-- 강채희 -->
-    <script>
-      const popup = document.querySelector('#popup');
-      const popupCloseBtn = popup.querySelector('#popup-Btn');
-      const agree = document.querySelector('#agree');
-
-      popup.style.display = document.cookie.includes("popup = 안볼래") ? "none" : "block";
-
-      popupCloseBtn.addEventListener("click", () => {
-        popup.style.display = "none";
-        if(agree.checked){
-          createCookie('popup','안볼래', 1);
-        }else{
-          createCookie('popup','안볼래', -1);
-        }
-      });
-
-      function createCookie(name, value, days){
-        let today = new Date();
-
-        today.setDate(today.getDate() + days);
-
-        document.cookie = `${name}=${value}; expires=${today.toUTCString()}`;
-      }
-    </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
